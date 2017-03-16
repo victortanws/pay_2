@@ -18,7 +18,7 @@
       <% @payments.each do |payment| %>
       <tr>
         <td><%= payment.user.email %></td>
-        <td><%= payment.other_id %></td>
+        <td><%= payment.debtorcreditor.email %></td>
         <td><%= payment.description %></td>
         <td>
           <a href="/payments/<%= payment.id %>" class="btn btn-primary">Show</a>
